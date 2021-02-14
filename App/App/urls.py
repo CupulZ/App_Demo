@@ -19,7 +19,7 @@ from App.views import principal, registro, login
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/',principal),
-    path('login/',login),
-    path('registro/',registro),
+    path('inicio/',principal, name="inicio"),
+    path('login/',login,name="login"),
+    path('registro/',registro,name="registro"),
 ]
