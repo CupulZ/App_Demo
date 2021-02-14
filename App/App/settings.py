@@ -54,7 +54,7 @@ ROOT_URLCONF = 'App.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Cupul29/Desktop/DGIMOB/App/App/Plantillas"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
