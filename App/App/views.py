@@ -1,27 +1,13 @@
 from django.http import HttpResponse
 from django.template import Template, Context
+from django.template import loader
+from django.shortcuts import render
 
 def principal(request):    
-    
-    externo=open("C:/Users/Cupul29/Desktop/DGIMOB/App/App/Plantillas/inicio.html")
-    plt=Template(externo.read())
-    externo.close()
-    ctx=Context()
-    documento=plt.render(ctx)
-    return HttpResponse(documento)
+    return render(request,"inicio.html")
 
 def registro(request):
-    externo=open("C:/Users/Cupul29/Desktop/DGIMOB/App/App/Plantillas/registro.html")
-    plt=Template(externo.read())
-    externo.close()
-    ctx=Context()
-    documento2=plt.render(ctx)
-    return HttpResponse(documento2)
+    return render(request,"registro.html")
 
 def login(request):
-    externo=open("C:/Users/Cupul29/Desktop/DGIMOB/App/App/Plantillas/login.html")
-    plt=Template(externo.read())
-    externo.close()
-    ctx=Context()
-    documento3=plt.render(ctx)
-    return HttpResponse(documento3)
+    return render(request,"login.html")
