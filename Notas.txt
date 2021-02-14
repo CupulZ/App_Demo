@@ -1,1 +1,7 @@
 1- crear una app demo con un controlador y autentificacion (Bearer Token)
+Sub Tareas:
+
+1- enlazar las vistas para navegar entre ellas html y en urls.py
+2- agregar formulario para el inicio de sesión
+3- agregar registro para usuarios de prueba
+4- agregar la autentificacion
