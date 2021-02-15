@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% trans "Sign in" %}</title>
+        <title>{% trans "Iniciar Sesion" %}</title>
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
         <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
@@ -11,9 +11,9 @@
 
         <div class="container">
             <form method="post" action="." class="form-signin" role="form">{% csrf_token %}
-                <h2 class="form-signin-heading">{% trans "Sign in" %}</h2>
+                <h2 class="form-signin-heading">{% trans "Iniciar Sesion" %}</h2>
                 {% if form.errors %}
-                    <div class="alert alert-danger">{% trans "User or password don't match." %}</div>
+                    <div class="alert alert-danger">{% trans "El usuario o la contraseña no coinciden." %}</div>
                 {% endif %}
 
                 {% for field in form %}
@@ -21,7 +21,7 @@
                 {% endfor %}
                     
                 <button class="btn btn-lg btn-primary btn-block" type="submit">{% trans "Sign in" %}</button>
-                <br>{% trans "Don't have an account?" %} <a href="{% url 'registro' %}">{% trans "Sign up here" %}</a>
+                <br>{% trans "No tienes cuenta?" %} <a href="{% url 'registro' %}">{% trans "Registrate aqui" %}</a>
             </form>
         </div>
 
