@@ -20,10 +20,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # sessions
+    # Inicio de sesion
    path('login/', views.LoginView.as_view(), name='login'),
    path('logout/', views.LogoutView.as_view(), name='logout'),
-   # register
+   # registro
    path('register/', views.RegisterView.as_view(), name='registro'),
    path('register/success/', views.RegisterSuccessView.as_view(), name='register-success'),
 ]
