@@ -2,7 +2,7 @@ body {
     padding-bottom: 40px;
   }
   
-  /* Form Sign In*/
+  /*Formulario de Inicio de Sesion*/
   
   .form-signin {
     max-width: 330px;
@@ -41,7 +41,7 @@ body {
   
   
   
-  /* Form Register */
+  /* Formulario de Registro */
   
   .form-register {
     max-width: 330px;
@@ -84,7 +84,7 @@ body {
     border-bottom-right-radius: 4px;
   }
   
-  /* Errors */
+  /* Errores */
   .has-error {
     border-color: #d80000  ;
     border-radius: 4px;
