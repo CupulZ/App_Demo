@@ -11,7 +11,6 @@ from django.views.generic.edit import FormView
 from registroApp import config
 from registroApp.forms import RegistrationForm, LoginForm
 
-
 class LoginView(FormView):
     template_name = 'C:/Users/Cupul29/Desktop/DGIMOB/registroApp/registroApp/templates/login.html'
     form_class = LoginForm
