@@ -1,0 +1,37 @@
+<!--<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Login</button>
+</form>-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}" />
+    </head>
+    <body>
+
+        <div class="container">
+            <form method="post" action="." class="form-signin" role="form">{% csrf_token %}
+                <h2 class="form-signin-heading">Sign in</h2>
+                {% if form.errors %}
+                    <div class="alert alert-danger">User or password don't match.</div>
+                {% endif %}
+
+                {% for field in form %}
+                    {{ field }}
+                {% endfor %}
+                    
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <br>Don't have an account?<a href="{% url 'registro' %}">Sign up here</a>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>
