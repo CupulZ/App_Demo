@@ -1,4 +1,1 @@
-1- crear una app demo con un controlador y autentificacion (Bearer Token)
-Sub Tareas:
-
-1- agregar la autentificacion Bearer Token
+1- Se agrego una nueva rama develop.
